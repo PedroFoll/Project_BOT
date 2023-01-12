@@ -1,11 +1,11 @@
 import webbrowser
 import pyautogui as pag
 from time import sleep
-from variables import *
+from helpers import *
+import listinhas as lls
 
 
-
-url = 'google.com'
+url = lls.url
 webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
 webbrowser.get('chrome').open_new_tab(url)
 
@@ -16,8 +16,7 @@ class Locate_logo():
                 c = 0
                 while c < 5:
                         c+=1
-                        c1 = str(c)
-                        
+                        c1 = str(c)                        
                         sleep(5)
                         try:
                                 locate = pag.locateCenterOnScreen("images/teste_google.jpeg", confidence= 0.9)

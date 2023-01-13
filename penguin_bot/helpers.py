@@ -5,7 +5,7 @@ import listinhas as lls
 chrome_path = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
 pes_img = pag.screenshot()
 
-def url_deal():
+""" def url_deal():
     url_dealer = randint(1,5)
     if url_dealer ==1:
         print('Tente encontrar Instagran')
@@ -20,3 +20,4 @@ def url_deal():
     
 url_deal()
 
+ """
